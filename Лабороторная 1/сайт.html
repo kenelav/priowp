@@ -1,86 +1,168 @@
 <html>
 <head>
-    <title>Язык C#</title>
-    <link rel="stylesheet" href="main.css" />
-<link rel="stylesheet" href="normalize.css" />
+	<title>Язык C#</title>
+	<link rel="stylesheet" href="main.css" />
+	<link rel="stylesheet" href="normalize.css" />
 </head>
 <body bgcolor="00ff60">
-<IMG class="right" src="original.jpg" alt="C#"><center><h1>Языки программирования: C# (C-sharp)</h1></center>
-<p class="tab">
-<h2>Содержание</h2><p class="tab"><ol>
-<li><a href="#part1">История создания</a></li>
-<li><a href="#part2">Краткий обзор языка</a></li>
-<li><a href="#part3">Пример кода</a></li></ol>
-<p><br><br><br><br>
-<p><IMG class="left" src="Pic-2-2.png" alt=".NET 6 as Multi-platform App UI"><p class="align"><article id="part1"><h2>История создания</h2></article></p>
-<p class="tab">
-Язык программирования С# был разработан в 1993—2001 годах группой инженеров компании Microsoft под руководством Андерса Хейлсберга и Скотта Вильтаумота как язык разработки приложений для платформы Microsoft.
-<p class="tab">К 2000 году у Microsoft были готовы промышленные версии новых технологий и решений для обмена сообщениями и данными, а также для создания Internet-приложений. Была выпущена и новая платформа для разработки под новые решения — <a href="https://ru.wikipedia.org/wiki/.NET">.NET</a>. В ней объединились сразу несколько языков программирования, что было в новинку для того времени.
-<p class="tab">Ещё одним новшеством платформы .NET была технология активных серверных страниц ASP.NET (Active Server Page). С её помощью можно было относительно быстро разработать веб-приложения, взаимодействующие с базами данных. Специально для ASP.NET был создан язык программирования C#. Да и сама ASP.NET была полностью написана на нём. <br><br><br><br><br><br><br><br><br><br>
-<article id="part2"><h2><b>Краткий обзор языка</b></h2></article>
+	<IMG class="right" src="original.jpg" alt="C#"><center><h1>Языки программирования: C# (C-sharp)</h1></center>
+	<p class="tab">
+		<h2>Содержание</h2>
+	<p class="tab">
+		<ol>
+			<li><a href="#part1">История создания</a></li>
+			<li><a href="#part2">Краткий обзор языка</a></li>
+			<li><a href="#part3">Пример кода</a></li>
+		</ol>
+	<p><br><br><br><br>
+	<p><IMG class="left" src="Pic-2-2.png" alt=".NET 6 as Multi-platform App UI"><p class="align1"><article id="part1"><h2>История создания</h2></article></p>
+	<p class="tab">
+		Язык программирования С# был разработан в 1993—2001 годах группой инженеров компании Microsoft под руководством Андерса Хейлсберга и Скотта Вильтаумота как язык разработки приложений для платформы Microsoft.
+	<p class="tab">К 2000 году у Microsoft были готовы промышленные версии новых технологий и решений для обмена сообщениями и данными, а также для создания Internet-приложений. Была выпущена и новая платформа для разработки под новые решения — <a href="https://ru.wikipedia.org/wiki/.NET">.NET</a>. В ней объединились сразу несколько языков программирования, что было в новинку для того времени.
+	<p class="tab">
+		Ещё одним новшеством платформы .NET была технология активных серверных страниц ASP.NET (Active Server Page). С её помощью можно было относительно быстро разработать веб-приложения, взаимодействующие с базами данных. Специально для ASP.NET был создан язык программирования C#. Да и сама ASP.NET была полностью написана на нём. <br><br><br><br><br><br><br><br><br><br>
+		<article id="part2"><h2><b>Краткий обзор языка</b></h2></article>
 
-<p class="tab">C# — это язык с C-подобным синтаксисом. Здесь он близок в этом отношении к <a href="https://ru.wikipedia.org/wiki/C%2B%2B">C++</a> и <a href="https://ru.wikipedia.org/wiki/Java">Java</a>.
-<p class="tab">Будучи объектно-ориентированным языком, он много перенял у Java и С++. Как и Java, C# изначально предназначался для веб-разработки, и примерно 75% его синтаксических возможностей такие же, как у  Java. C# также называют «очищенной версией Java». Ещё 10% наш герой позаимствовал из C++ и 5% – из Visual Basic. Оставшиеся 10% C# — это реализация собственных идей разработчиков. Объектно-ориентированный подход позволяет строить с помощью C# крупные, но в то же время гибкие, масштабируемые и расширяемые приложения.
-<p class="tab">C# уже давно поддерживает много полезных функций:<ul><li>инкапсуляция, </li><li>наследование,<li>полиморфизм,</li> <li>перегрузка операторов,</li><li>статическая типизация.</li></ul>
-<p align="center"> Далее поговорим о плюсах и минусах C#.
-<p class="tab1">
-			Плюсы ->>>
-<IMG class="center" src="procon.jpg" alt="Pros and Cons">
-<span align="right"> - Минусы</span></p>
-
-<p class="tab">У «шарпа» выделяют много преимуществ:
-:<p><ul class="icon_img"><li>Поддержка подавляющего большинства продуктов Microsoft. </li><li>Бесплатность ряда инструментов для небольших компаний и некоторых индивидуальных разработчиков — Visual Studio, облако Azure, Windows Server, Parallels Desktop для Mac Pro и др. </li><li>Типы данных имеют фиксированный размер (32-битный int и 64-битный long), что повышает «мобильность» языка и упрощает программирование, так как вы всегда знаете точно, с чем вы имеете дело. </li><li>Автоматическая «сборка мусора»  Это значит, что нам в большинстве случаев не придётся заботиться об освобождении памяти. Вышеупомянутая общеязыковая среда CLR сама вызовет сборщик мусора и очистит память. </li><li>Большое количество «синтаксического «сахара» — специальных конструкций, разработанных для понимания и написания кода. Они не имеют значения при компиляции. </li><li>Низкий порог вхождения. Синтаксис C# имеет много схожего с другими языками программирования, благодаря чему облегчается переход для программистов. Язык C# часто признают наиболее понятным и подходящим для новичков. </li><li>С помощью Xamarin на C# можно писать программы и приложения для таких операционных систем, как iOS, Android, MacOS и Linux. </li><li>Сегодня в любом регионе России имеется немало вакантных мест на должность C#-программиста.</li></ul><p class="tab">Но есть у C# и некоторые недостатки:<p><ul class="icon_img"><li>Приоритетная ориентированность на платформу Windows; </li><li>Язык бесплатен только для небольших фирм, индивидуальных программистов, стартапов и учащихся . Крупной компании покупка лицензионной версии этого языка обойдётся в круглую сумму. </li></ul>
-<p><article id="part3"><h2><b>Пример кода</b></h2></article>
-<p class="tab">В качестве примера кода возьмем программу для вычисления площади, высоты, радиусов вписанной и описанной окружности равностороннего треугольника. Ниже приведен код с соблюдением синтаксиса.  
-<p>
-<span class="IDE-clr-blue"> using </span> System;
+	<p class="tab">C# — это язык с C-подобным синтаксисом. Здесь он близок в этом отношении к <a href="https://ru.wikipedia.org/wiki/C%2B%2B">C++</a> и <a href="https://ru.wikipedia.org/wiki/Java">Java</a>.
+	<p class="tab">Будучи объектно-ориентированным языком, он много перенял у Java и С++. Как и Java, C# изначально предназначался для веб-разработки, и примерно 75% его синтаксических возможностей такие же, как у  Java. C# также называют «очищенной версией Java». Ещё 10% наш герой позаимствовал из C++ и 5% – из Visual Basic. Оставшиеся 10% C# — это реализация собственных идей разработчиков. Объектно-ориентированный подход позволяет строить с помощью C# крупные, но в то же время гибкие, масштабируемые и расширяемые приложения.
+	<p class="tab">C# уже давно поддерживает много полезных функций:<ul><li>инкапсуляция, </li><li>наследование,<li>полиморфизм,</li> <li>перегрузка операторов,</li><li>статическая типизация.</li></ul>
+	<p align="center"> Далее поговорим о плюсах и минусах C#.
+	<p class="align1">				Плюсы -<span align="center"><img class="cente" src="procon.jpg" alt="Pros and Cons"></span><span align="right">- Минусы</span>
+	</p>
+	<p class="tab">
+		У «шарпа» выделяют много преимуществ:
+	<p><ul class="icon_img"><li>Поддержка подавляющего большинства продуктов Microsoft. </li><li>Бесплатность ряда инструментов для небольших компаний и некоторых индивидуальных разработчиков — Visual Studio, облако Azure, Windows Server, Parallels Desktop для Mac Pro и др. </li><li>Типы данных имеют фиксированный размер (32-битный int и 64-битный long), что повышает «мобильность» языка и упрощает программирование, так как вы всегда знаете точно, с чем вы имеете дело. </li><li>Автоматическая «сборка мусора»  Это значит, что нам в большинстве случаев не придётся заботиться об освобождении памяти. Вышеупомянутая общеязыковая среда CLR сама вызовет сборщик мусора и очистит память. </li><li>Большое количество «синтаксического «сахара» — специальных конструкций, разработанных для понимания и написания кода. Они не имеют значения при компиляции. </li><li>Низкий порог вхождения. Синтаксис C# имеет много схожего с другими языками программирования, благодаря чему облегчается переход для программистов. Язык C# часто признают наиболее понятным и подходящим для новичков. </li><li>С помощью Xamarin на C# можно писать программы и приложения для таких операционных систем, как iOS, Android, MacOS и Linux. </li><li>Сегодня в любом регионе России имеется немало вакантных мест на должность C#-программиста.</li></ul><p class="tab">Но есть у C# и некоторые недостатки:<p><ul class="icon_img"><li>Приоритетная ориентированность на платформу Windows; </li><li>Язык бесплатен только для небольших фирм, индивидуальных программистов, стартапов и учащихся . Крупной компании покупка лицензионной версии этого языка обойдётся в круглую сумму. </li></ul>
+	<p><article id="part3"><h2><b>Пример кода</b></h2></article>
+	<p class="tab">В качестве примера кода возьмем программу для вычисления площади, высоты, радиусов вписанной и описанной окружности равностороннего треугольника. Ниже приведен код с соблюдением синтаксиса.
+	<p class="tab1">
+<span class="IDE-clr-blue">using </span> System;
 <br>
 <span class="IDE-clr-blue">namespace </span> Code_Example<br>
-{<p class="tab1">	<span class="IDE-clr-blue">internal class </span><span class="IDE-clr-lblue">Program</span><br>	{<br>
+{
+
+	<span class="IDE-clr-blue">internal class </span><span class="IDE-clr-lblue">Program</span><br>	{<br>
 		<span class="IDE-clr-blue">static void </span>Main(<span class="IDE-clr-blue">string </span>[] args) <br>
-<br>		{
-<br>			Console.WriteLine("Программа для вычисления площади, высоты, радиусов вписанной и описанной<br>
-			окружности равностороннего треугольника.<br>
- 			Введите значение строны треугольника:");<br>
-			<span class="IDE-clr-blue">double </span>a = Convert.ToDouble(Console.ReadLine());<br>
-			<span class="IDE-clr-blue">if </span>(a != 0)<br>
-			{<br>
-				Console.WriteLine("Какой параметр необходимо вычислить? Введите 'площадь', 'высоту',<br>
-				'радиус вписанной окружности' или'радиус описанной окружности'.");<br>
-				<span class="IDE-clr-blue">string </span>choice = Console.ReadLine();<br>
-				<span class="IDE-clr-blue">switch </span>(choice)<br>
+		{<br>
+				Console.WriteLine("Программа для вычисления площади, высоты, радиусов вписанной и описанной<br>
+				окружности равностороннего треугольника. Введите значение строны треугольника:");<br>
+				<span class="IDE-clr-blue">double </span>a = Convert.ToDouble(Console.ReadLine());<br>
+				<span class="IDE-clr-blue">if </span>(a != 0)<br>
 				{<br>
-					<span class="IDE-clr-blue">case </span> "площадь":<br>
-						<span class="IDE-clr-blue">double </span> s = Math.Sqrt(3) / 4 * Math.Pow(a, 2);<br>
-						Console.WriteLine($"Площадь равна: {s}");<br>
-						<span class="IDE-clr-blue">break</span>;<br>
-					<span class="IDE-clr-blue">case </span> "высоту":<br>
-						<span class="IDE-clr-blue">double </span> h = Math.Sqrt(3) / 2 * a;<br>
-						Console.WriteLine($"Высота равна: {h}");<br>
-						<span class="IDE-clr-blue">break</span>;<br>
-					<span class="IDE-clr-blue">case</span> "радиус вписанной окружности":<br>
-						<span class="IDE-clr-blue">double</span> r = a / (2 * Math.Sqrt(3));<br>
-						Console.WriteLine($"Радиус вписанной окружности: {r}");<br>
-						<span class="IDE-clr-blue">break</span>;<br>
-					<span class="IDE-clr-blue">case</span> "радиус описанной окружности":<br>
-						<span class="IDE-clr-blue"> double </span> R = 2 / Math.Sqrt(3) * a;<br>
-						Console.WriteLine($"Радиус описанной окружности: {R}");<br>
-						<span class="IDE-clr-blue">break</span>;<br>
-					<span class="IDE-clr-blue">default </span>:<br>
-						Console.WriteLine("Ошибка ввода, возможно вы ввели неверное значение.<br>
-						Перезапустите программу и попробуйте снова.");<br>
-						<span class="IDE-clr-blue">break</span>;<br>
-				}
-<br>			}<br>
-			<span class="IDE-clr-blue">else </span><br>
+					Console.WriteLine("Какой параметр необходимо вычислить? Введите 'площадь', 'высоту',<br>
+					'радиус вписанной окружности' или'радиус описанной окружности'.");<br>
+					<span class="IDE-clr-blue">string </span>choice = Console.ReadLine();<br>
+					<span class="IDE-clr-blue">switch </span>(choice)<br>
+						{<br>
+							<span class="IDE-clr-blue">case </span> "площадь":<br>
+								<span class="IDE-clr-blue">double </span> s = Math.Sqrt(3) / 4 * Math.Pow(a, 2);<br>
+								Console.WriteLine($"Площадь равна: {s}");<br>
+								<span class="IDE-clr-blue">break</span>;<br>
+							<span class="IDE-clr-blue">case </span> "высоту":<br>
+								<span class="IDE-clr-blue">double </span> h = Math.Sqrt(3) / 2 * a;<br>
+								Console.WriteLine($"Высота равна: {h}");<br>
+								<span class="IDE-clr-blue">break</span>;<br>
+							<span class="IDE-clr-blue">case</span> "радиус вписанной окружности":<br>
+								<span class="IDE-clr-blue">double</span> r = a / (2 * Math.Sqrt(3));<br>
+								Console.WriteLine($"Радиус вписанной окружности: {r}");<br>
+								<span class="IDE-clr-blue">break</span>;<br>
+							<span class="IDE-clr-blue">case</span> "радиус описанной окружности":<br>
+								<span class="IDE-clr-blue"> double </span> R = 2 / Math.Sqrt(3) * a;<br>
+								Console.WriteLine($"Радиус описанной окружности: {R}");<br>
+								<span class="IDE-clr-blue">break</span>;<br>
+							<span class="IDE-clr-blue">default </span>:<br>
+								Console.WriteLine("Ошибка ввода, возможно вы ввели неверное значение.<br>
+								Перезапустите программу и попробуйте снова.");<br>
+								<span class="IDE-clr-blue">break</span>;<br>
+							}<br>
+						}<br>
+						<span class="IDE-clr-blue">else </span><br>
 			{<br>
 				Console.WriteLine("Некорректное значение длины, перезапустите программу");<br>
 			}<br>
-		Console.ReadKey();<br>
+			Console.ReadKey();<br>
 		}<br>
 	}<br>
 }
+</p>
+	<p>
+		<table class="t1" summary="Работа программы, код который был описан выше.">
+			<caption>Работа программы, код который был описан выше.</caption>
+			<thead>
+				<tr>
+					<th>Ввод: сторона треугольника</th>
+					<th>Ввод: параметр</th>
+					<th>Вывод</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<th colspan="3">by kenelav</th>
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr><td align="center">7</td><td align="center">площадь</td><td align="center">21,2176223927187</td></tr>
+				<tr><td align="center">9</td><td align="center">высоту</td><td align="center">7,79422863405995</td></tr>
+				<tr><td align="center">4</td><td align="center">радиус вписанной окружности</td><td align="center">1,15470053837925</td></tr>
+				<tr><td align="center">5</td><td align="center">радиус описанной окружности</td><td align="center">5,77350269189626</td></tr>
+			</tbody>
+		</table>
 
+		<h3>Список использованных тэгов и CSS-свойств</h3>
+
+		<table class="iksweb">
+			<tbody>
+				<tr><td>HTML</td><td>CSS</td></tr>
+				<tr><td>1 table </td><td>src</td></tr>
+				<tr><td>2 tbody</td><td>fon-family</td></tr>
+				<tr><td>3 tr</td><td>font-size</td></tr>
+				<tr><td>4 td</td><td>margin</td></tr>
+				<tr><td>5 tfoot</td><td>color</td></tr>
+				<tr><td>6 thead</td><td>list-style-image</td></tr>
+				<tr><td>7 caption</td><td>white-space</td></tr>
+				<tr><td>8 h1</td><td>float</td></tr>
+				<tr><td>9 h2</td><td>border</td></tr>
+				<tr><td>10 h3</td><td>display</td></tr>
+				<tr><td>11 p</td><td>width</td></tr>
+				<tr><td>12 span</td><td>height</td></tr>
+				<tr><td>13 br<td>text-indent</td></tr>
+				<tr><td>14 title</td><td>text-align</td></tr>
+				<tr><td>15 link</td><td>border-collapse</td></tr>
+				<tr><td>16 a</td><td>padding</td></tr>
+				<tr><td>17 ul</td><td>background</td></tr>
+				<tr><td>18 article</td><td>text-transform</td></tr>
+				<tr><td>19 b</td><td>border-right</td></tr>
+				<tr><td>20 li</td><td>border-bottom</td></tr>
+				<tr><td>21 center</td><td>font-weight</td></tr>
+				<tr><td>22 ul</td><td></td></tr>
+				<tr><td>23 ol</td><td></td></tr>
+				<tr><td>24 img</td><td></td></tr>
+				<tr><td>25 </td><td></td></tr>
+				<tr><td>26 </td><td></td></tr>
+				<tr><td>27 </td><td></td></tr>
+				<tr><td>28 </td><td></td></tr>
+				<tr><td>29 </td><td></td></tr>
+				<tr><td>30 </td><td></td></tr>
+				<tr><td>31 </td><td></td></tr>
+				<tr><td>32 </td><td></td></tr>
+				<tr><td>33 </td><td></td></tr>
+				<tr><td>34 </td><td></td></tr>
+				<tr><td>35 </td><td></td></tr>
+				<tr><td>36 </td><td></td></tr>
+				<tr><td>37 </td><td></td></tr>
+				<tr><td>38 </td><td></td></tr>
+				<tr><td>39 </td><td></td></tr>
+				<tr><td>40 </td><td></td></tr>
+				<tr><td>41 </td><td></td></tr>
+				<tr><td>42 </td><td></td></tr>
+				<tr><td>43 </td><td></td></tr>
+				<tr><td>44 </td><td></td></tr>
+				<tr><td>45 </td><td></td></tr>
+				<tr><td>46 </td><td></td></tr>
+				<tr><td>47 </td><td></td></tr>
+				<tr><td>48 </td><td></td></tr>
+				<tr><td>49 </td><td></td></tr>
+			</tbody>
+		</table>
 
 </body>
 </html>
