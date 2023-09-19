@@ -1,0 +1,68 @@
+@font-face {
+    font-family: Kanit-Bold;
+    src: url("Kanit-Bold.ttf");
+}
+html,
+body {
+    font-family: Kanit-Bold, serif;
+    font-size: 14pt;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 24pt;
+}
+
+h2 {
+    font-size: 18pt;
+}
+
+.IDE-clr-blue {
+    color:#0000FF;
+}
+
+.IDE-clr-lblue {
+    color: #00BFFF;
+}
+
+ul.icon_img {
+    list-style-image: url(imaga1.png);
+}
+
+P.tab1 {
+    white-space: pre-wrap;
+}
+
+img.right {
+    float: right;
+    margin: 15px 15px 15px 15px;
+    border: 5px solid black;
+    display: flex;
+    width: 300px;
+    height: 200px;
+}
+
+img.left {
+    float: left;
+    margin: 10px 100px 10px 20px;
+    border: 2px dashed violet;
+    display: flex;
+    width: 450px;
+    height: 400px;
+}
+
+img.center {
+    display: inline-block;
+    margin-inline-start: 25%;
+    margin-inline-end: 25%;
+    border: 4px initial navy;
+}
+
+p.tab {
+    text-indent: 30px;
+}
+
+.align {
+    text-align: center;
+}
