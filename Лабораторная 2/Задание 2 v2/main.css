@@ -1,12 +1,11 @@
 body {
     color: white;
-    width: 100%;
-    height: 100%;
 }
-div{
-	position: relative;
-	float: left;
-	box-sizing: border-box;
+div {
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    background: #000;
 }
 .colorful {
     width: 100%;
@@ -50,8 +49,14 @@ div{
     .rez9 {
         width: 100%;
     }
+    .rez10 {
+        width: 75%;
+    }
+.rez11 {
+    width: 37.5%;
+}
 
-        .rez1,.rez2,.rez3,.rez4,.rez5,.rez6,.rez7,.rez8,.rez9{
+        .rez1,.rez2,.rez3,.rez4,.rez5,.rez6,.rez7,.rez8,.rez9,.rez10,.rez11{
         min-height: 1px;
 }
 
@@ -60,11 +65,7 @@ div{
 	border: 15px solid #000;
 	height: 150px;
 }
-.block-15{
-	width: 100%;
-	border: 15px solid #000;
-	height: 225px;
-}
+
 .block-2{
 	width: 100%;
 	border: 15px solid #000;
@@ -283,7 +284,14 @@ div{
         width: 100%;
     }
 
-        .rez_m_1,.rez_m_2,.rez_m_3,.rez_m_4,.rez_m_5,.rez_m_6,.rez_m_7,.rez_m_8,.rez_m_9{
+    .rez_m_10 {
+        width: 75%;
+    }
+    .rez_m_11 {
+        width: 37.5%;
+    }
+
+        .rez_m_1,.rez_m_2,.rez_m_3,.rez_m_4,.rez_m_5,.rez_m_6,.rez_m_7,.rez_m_8,.rez_m_9, .rez_m_10, .rez_m_11{
         min-height: 1px;
     }
 
@@ -291,11 +299,6 @@ div{
         width: 100%;
         border: 15px solid #000;
         height: 150px;
-    }
-    .block_m_15{
-        width: 100%;
-        border: 15px solid #000;
-        height: 225px;
     }
     .block_m_2{
         width: 100%;
@@ -368,7 +371,14 @@ div{
         width: 100%;
     }
 
-        .rez_b_1, .rez_b_2, .rez_b_3, .rez_b_4, .rez_b_5, .rez_b_6, .rez_b_7, .rez_b_8, .rez_b_9{
+    .rez_b_10 {
+        width: 75%;
+    }
+    .rez_b_11 {
+        width: 37.5%;
+    }
+
+    .rez_b_1, .rez_b_2, .rez_b_3, .rez_b_4, .rez_b_5, .rez_b_6, .rez_b_7, .rez_b_8, .rez_b_9, .rez_b_10, .rez_b_11 {
         min-height: 1px;
     }
 
@@ -377,12 +387,6 @@ div{
         border: 15px solid #000;
         height: 150px;
        
-    }
-    .block_b_15{
-        width: 100%;
-        border: 15px solid #000;
-        height: 225px;
-        
     }
     .block_b_2{
         width: 100%;
@@ -395,6 +399,11 @@ div{
         border: 15px solid #000;
         height: 450px;
         
+    }
+    .block_b_pad {
+        width: 100%;
+        border: 15px solid #000;
+        height: 150px;
     }
     .pull-left_b_1{
         margin-left: 8.33333%;
