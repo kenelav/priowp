@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Формуляр читателя в библиотеке</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="styles.css" />
+    
+</head>
+<body>
+<div class="container tablet">
+    <h1>Формуляр читателя библиотеки</h1>
+    <div class="tablet">
+        <table>
+            <tbody>
+                <tr>
+                    <td>№</td>
+                    <td><textarea id="book_number" name="book_number" rows="1" cols="4"></textarea></td>
+                    <td><textarea id="book_number" name="book_number" rows="1" cols="4"></textarea></td>
+                    <td><textarea id="book_number" name="book_number" rows="1" cols="4"></textarea></td>
+                    <td><textarea id="book_number" name="book_number" rows="1" cols="4"></textarea></td>
+                    <td><textarea id="book_number" name="book_number" rows="1" cols="4"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Год</td>
+                    <td><textarea id="book_number" name="book_number" rows="1" cols="4"></textarea></td>
+                    <td><textarea id="book_number" name="book_number" rows="1" cols="4"></textarea></td>
+                    <td><textarea id="book_number" name="book_number" rows="1" cols="4"></textarea></td>
+                    <td><textarea id="book_number" name="book_number" rows="1" cols="4"></textarea></td>
+                    <td><textarea id="book_number" name="book_number" rows="1" cols="4"></textarea></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+        <div class="tablet">
+            <form>
+                <label for='username'>Фамилия:</label>
+                <input type='text' id='surname' name='surname' placeholder="Ваша фамилия"/><br>
+                <label for='name'>Имя:</label>
+                <input type='text' id='name' name='name' placeholder="Ваше имя"/><br>
+                <label for='patronymic'>Отчество:</label>
+                <input type='text' id='patronymic' name='patronymic' placeholder="Ваше отчество"/><br>
+            </form>
+        </div>
+    <div>
+        Дата рождения:<input type="date" id="birth_date"> 
+    </div>
+    <div>
+        Образование:<select name="select">
+            <option value="value" selected>Основное общее образование (9 классов)</option>
+            <option value="value2">Среднее общее образование (11 классов)</option>
+            <option value="value3">Среднее профессиональное образование</option>
+            <option value="value3">Высшее профессиональное образование</option>
+          </select>
+    </div>
+    <div>
+        <label for='tel'>Номер телефона:</label>
+                <input type='tel' id='tel' name='tel' placeholder="Ваш номер телефона +7 (___) ___-__-__"/><br>
+    </div>
+    <div>
+        <label for='email'>Адрес электронной почты:</label>
+                <input type='email' id='email' name='email' placeholder="Адрес вашей электронной почты"/><br>
+    </div>
+    <br>
+        <div><form>
+            <fieldset>
+                <legend>Укажите согласия</legend>
+                    <input type="radio" value="pers_data">
+                    Согласен(на) на обработку персональных данных<br>
+                    <input type="radio" value="debt">
+                    Согласен(на) на получение напоминаний o задолженностях<br>
+                    <input type="radio" value="news">
+                    Согласен(на) на получение новостей по электронной почте<br>
+                    <input type="reset" value="Сбросить согласия" class="reset_button">
+            </fieldset></form>
+        </div>
+    
+        <p>
+        <div class="desktop tablet">
+            <form action='/send' method='POST'>
+                <button class="send_button" type="submit" action="/send" name="s_button">>Отправить формуляр в библиотеку<</button>
+            </form>
+        </div>
+        </p>
+</div>
+</body>
+</html>
