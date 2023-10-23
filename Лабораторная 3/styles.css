@@ -8,6 +8,7 @@ div {
     width: 400px;
 }
 
+
 h1 {
     font-size: large;
 }
@@ -74,8 +75,9 @@ fieldset {
         display: none;
     }
 
-    #surname, #name, #patronymic, #tel, #email {
+    .surname, .name, .patronymic, .tel, .email, .education, .birth_date {
         width: 400px;
+        padding: 0;
     }
 }
 
@@ -90,8 +92,8 @@ fieldset {
     .container {
         width: 1200px;
         }
-    #surname, #name, #patronymic, #tel, #email {
-        width: 200px;
-
+    .surname, .name, .patronymic, .tel, .email, .education, .birth_date  {
+        width: 400px;
+        padding: 0;
     }
 }
