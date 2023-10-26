@@ -1,0 +1,216 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.steel_ball1 {
+    background: rgb(94,94,94);
+    background: radial-gradient(circle, rgba(94,94,94,1) 0%, rgba(219,219,219,1) 100%);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 50%;
+    animation: left-circle 5s linear infinite;
+    margin-top: 50px;
+    margin-left: 300px;
+}
+
+.steel_ball2 {
+    background: rgb(94,94,94);
+    background: radial-gradient(circle, rgba(94,94,94,1) 0%, rgba(219,219,219,1) 100%);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 50%;
+    animation: right-circle 5s linear infinite;
+    margin-top: 50px;
+    margin-left: 600px;
+}
+
+.steel_ball3 {
+    background: rgb(94,94,94);
+    background: radial-gradient(circle, rgba(94,94,94,1) 0%, rgba(219,219,219,1) 100%);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 50%;
+    margin-top: 250px;
+    margin-left: 400px;
+}
+
+.steel_ball4 {
+    background: rgb(94,94,94);
+    background: radial-gradient(circle, rgba(94,94,94,1) 0%, rgba(219,219,219,1) 100%);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 50%;
+    margin-top: 250px;
+    margin-left: 500px;
+}
+
+
+
+.shell {
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.gifka {
+    display: block;
+    margin-top: 100px;
+    width: 1000px;
+    height: 500px;
+    border: 1px solid black;
+    
+}
+
+.rectangle_horiz_up {
+    width: 600px;
+    height: 20px;
+    background: grey;
+    margin-top: 100px;
+    margin-left: 200px;
+    position: absolute;
+    border-radius: 30%;
+}
+
+.rectangle_horiz_down {
+    width: 640px;
+    height: 40px;
+    background: rgb(128, 76, 17);
+    margin-top: 400px;
+    margin-left: 180px;
+    transform: skew(30deg);
+    position: absolute;
+    border-radius: 10%;
+}
+
+.rectangle_vert_left {
+    width: 20px;
+    height: 300px;
+    background: grey;
+    margin-top: 110px;
+    margin-left: 200px;
+    position: absolute;
+    border-radius: 30%;
+}
+
+.rectangle_vert_right {
+    width: 20px;
+    height: 300px;
+    background: grey;
+    margin-top: 110px;
+    margin-left: 780px;
+    position: absolute;
+    border-radius: 30%;
+}
+
+.rope1, .rope2, .rope3, .rope4 {
+    height: 180px;
+    width: 4px;
+    background: #ff0000;
+    position: absolute;
+}
+
+.rope1 {
+    margin-top: 10px;
+    margin-left: 350px;
+    animation: rope1 5s linear infinite;
+}
+.rope2 {
+    margin-top: 110px;
+    margin-left: 450px;
+}
+.rope3 {
+    margin-top: 110px;
+    margin-left: 550px;
+}
+.rope4 {
+    margin-top: 10px;
+    margin-left: 650px;
+    animation: rope2 5s linear infinite;
+}
+
+
+
+
+
+@keyframes left-circle {
+    0%{
+        transform: rotate(90deg) translateX(200px) rotate(90deg);
+    }
+    25%{
+        transform: rotate(180deg) translateX(200px) rotate(180deg); 
+    }
+    50%{
+        transform: rotate(90deg) translateX(200px) rotate(90deg);
+    }
+    100%{
+        transform: rotate(90deg) translateX(200px) rotate(90deg);
+    }
+}
+
+@keyframes right-circle {
+
+    0%{
+        transform: rotate(450deg) translateX(200px) rotate(450deg);
+    }
+    50%{
+        transform: rotate(450deg) translateX(200px) rotate(450deg); 
+    }
+    75%{
+        transform: rotate(360deg) translateX(200px) rotate(360deg);
+    }
+    100%{
+        transform: rotate(450deg) translateX(200px) rotate(450deg);
+    }
+
+}
+
+@keyframes rope1 {
+    0%{
+        transform: rotate(90deg) translateX(100px) translateY(0) rotate(90deg);
+    }
+    25%{
+        transform: rotate(135deg) translateX(100px) translateY(70px) rotate(135deg); 
+    }
+    50%{
+        transform: rotate(90deg) translateX(100px) translateY(0) rotate(90deg);
+    }
+    100%{
+        transform: rotate(90deg) translateX(100px) translateY(0) rotate(90deg);
+    }
+}
+
+@keyframes rope2 {
+
+    0%{
+        transform: rotate(450deg) translateX(100px) translateY(0) rotate(450deg);
+    }
+    50%{
+        transform: rotate(450deg) translateX(100px) translateY(0)  rotate(450deg); 
+    }
+    75%{
+        transform: rotate(405deg) translateX(100px) translateY(-70px) rotate(405deg);
+    }
+    100%{
+        transform: rotate(450deg) translateX(100px) translateY(0) rotate(450deg);
+    }
+
+}
