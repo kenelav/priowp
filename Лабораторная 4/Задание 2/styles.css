@@ -1,9 +1,7 @@
 
 
 
-.shell:hover {
-    transition: all 5s linear;
-}
+
 
 
 
@@ -15,6 +13,8 @@
     display: flex;
     
 }
+
+
 .gifka {
     display: block;
     margin-top: 100px;
@@ -30,11 +30,11 @@
     background: radial-gradient(circle, rgba(94,94,94,1) 0%, rgba(219,219,219,1) 100%);
     width: 100px;
     height: 100px;
-    position: absolute;
+    position: relative;
     border-radius: 50%;
-    animation: left-circle 5s linear 1;
-    margin-top: 50px;
-    margin-left: 300px;
+    animation: left-circle 5s linear infinite;
+    top: -650px;
+    left: 300px;
     
 }
 
@@ -43,11 +43,11 @@
     background: radial-gradient(circle, rgba(94,94,94,1) 0%, rgba(219,219,219,1) 100%);
     width: 100px;
     height: 100px;
-    position: absolute;
+    position: relative;
     border-radius: 50%;
-    animation: right-circle 5s linear 1;
-    margin-top: 50px;
-    margin-left: 600px;
+    animation: right-circle 5s linear infinite;
+    top:  -750px;
+    left: 600px;
 }
 
 .steel_ball3 {
@@ -55,10 +55,10 @@
     background: radial-gradient(circle, rgba(94,94,94,1) 0%, rgba(219,219,219,1) 100%);
     width: 100px;
     height: 100px;
-    position: absolute;
+    position: relative;
     border-radius: 50%;
-    margin-top: 250px;
-    margin-left: 400px;
+    top:  -650px;
+    left: 400px;
 }
 
 .steel_ball4 {
@@ -66,10 +66,10 @@
     background: radial-gradient(circle, rgba(94,94,94,1) 0%, rgba(219,219,219,1) 100%);
     width: 100px;
     height: 100px;
-    position: absolute;
+    position: relative;
     border-radius: 50%;
-    margin-top: 250px;
-    margin-left: 500px;
+    top: -750px;
+    left: 500px;
 }
 
 
@@ -121,27 +121,27 @@
     height: 180px;
     width: 4px;
     background: #ff0000;
-    position: absolute;
+    position: relative;
 }
 
 .rope1 {
-    margin-top: 10px;
-    margin-left: 350px;margin-top: 110px;
-    animation: rope1 5s linear 1;
+    top: 10px;
+    left: 350px;
+    animation: rope1 5s linear infinite;
     
 }
 .rope2 {
-    margin-top: 110px;
-    margin-left: 450px;
+    top: -70px;
+    left: 450px;
 }
 .rope3 {
-    margin-top: 110px;
-    margin-left: 550px;
+    top: -250px;
+    left: 550px;
 }
 .rope4 {
-    margin-top: 10px;
-    margin-left: 650px;
-    animation: rope2 5s linear 1;
+    top: -530px;
+    left: 650px;
+    animation: rope2 5s linear infinite;
 }
 
 
