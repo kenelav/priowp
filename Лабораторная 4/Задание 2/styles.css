@@ -1,20 +1,28 @@
 
 
 
+.shell:hover {
+    transition: all 5s linear;
+}
 
 
 
 
-
-
-
-
-
-
-
-
-
-
+.shell {
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+}
+.gifka {
+    display: block;
+    margin-top: 100px;
+    width: 1000px;
+    height: 500px;
+    border: 1px solid black;
+    
+}
 
 
 .steel_ball1 {
@@ -24,9 +32,10 @@
     height: 100px;
     position: absolute;
     border-radius: 50%;
-    animation: left-circle 5s linear infinite;
+    animation: left-circle 5s linear 1;
     margin-top: 50px;
     margin-left: 300px;
+    
 }
 
 .steel_ball2 {
@@ -36,7 +45,7 @@
     height: 100px;
     position: absolute;
     border-radius: 50%;
-    animation: right-circle 5s linear infinite;
+    animation: right-circle 5s linear 1;
     margin-top: 50px;
     margin-left: 600px;
 }
@@ -65,20 +74,7 @@
 
 
 
-.shell {
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    display: flex;
-}
-.gifka {
-    display: block;
-    margin-top: 100px;
-    width: 1000px;
-    height: 500px;
-    border: 1px solid black;
-    
-}
+
 
 .rectangle_horiz_up {
     width: 600px;
@@ -130,8 +126,9 @@
 
 .rope1 {
     margin-top: 10px;
-    margin-left: 350px;
-    animation: rope1 5s linear infinite;
+    margin-left: 350px;margin-top: 110px;
+    animation: rope1 5s linear 1;
+    
 }
 .rope2 {
     margin-top: 110px;
@@ -144,7 +141,7 @@
 .rope4 {
     margin-top: 10px;
     margin-left: 650px;
-    animation: rope2 5s linear infinite;
+    animation: rope2 5s linear 1;
 }
 
 
