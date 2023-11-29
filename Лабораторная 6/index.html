@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Формуляр читателя в библиотеке v2</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="styles.css" />
+    
+</head>
+<body>
+    <script src="script.js"></script><form class="for_form" id="for_form">
+<div class="container tablet">
+    <h1>Формуляр читателя библиотеки v2</h1>
+    надо сделать бесконечное число попыток заполнения и вывода
+    <div class="tablet">
+        <table>
+            <tbody>
+                <tr>
+                    <td>№</td>
+                    <td><textarea id="book_number1" name="book_number1" rows="1" cols="4"></textarea></td>
+                    <td><textarea id="book_number2" name="book_number2" rows="1" cols="4"></textarea></td>
+                    <td><textarea id="book_number3" name="book_number3" rows="1" cols="4"></textarea></td>
+                    <td><textarea id="book_number4" name="book_number4" rows="1" cols="4"></textarea></td>
+                    <td><textarea id="book_number5" name="book_number5" rows="1" cols="4"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Год</td>
+                    <td><textarea id="lend_year1" name="lend_year1" rows="1" cols="4"></textarea></td>
+                    <td><textarea id="lend_year2" name="lend_year2" rows="1" cols="4"></textarea></td>
+                    <td><textarea id="lend_year3" name="lend_year3" rows="1" cols="4"></textarea></td>
+                    <td><textarea id="lend_year4" name="lend_year4" rows="1" cols="4"></textarea></td>
+                    <td><textarea id="lend_year5" name="lend_year5" rows="1" cols="4"></textarea></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+        <div>
+                <label for='surname'><span class="red_form">*</span> Фамилия:</label><br>
+                <input type='text' id='surname' name='surname' placeholder="* Ваша фамилия" class="surname" /><br>
+                <label for='name'><span class="red_form">*</span> Имя:</label><br>
+                <input type='text' id='name' name='name' placeholder="* Ваше имя" class="name" /><br>
+                <label for='patronymic'>Отчество:</label><br>
+                <input type='text' id='patronymic' name='patronymic' placeholder="Ваше отчество" class="patronymic"/><br>
+        </div>
+    <div>
+        <span class="red_form">*</span> Дата рождения:<br><input type="date" id="birth_date" class="birth_date" >
+    </div>
+    <div>
+        <span class="red_form">*</span> Образование:<br><select name="select" id="select" class="education">
+            <option value="Основное общее образование (9 классов)" selected>Основное общее образование (9 классов)</option>
+            <option value="Среднее общее образование (11 классов)">Среднее общее образование (11 классов)</option>
+            <option value="Среднее профессиональное образование">Среднее профессиональное образование</option>
+            <option value="Высшее профессиональное образование">Высшее профессиональное образование</option>
+          </select>
+    </div>
+    <div>
+        <label for='tel'><span class="red_form">*</span> Номер телефона:</label><br>
+                <input type='tel' id='tel' name='tel' placeholder="* Ваш номер телефона +7(___)___-__-__" class="tel" required  
+                pattern="^(?:\+)?\d(?:[ (]+)?\d{3}(?:[ )]+)?\d{3}(?:[- ]+)?\d{2}(?:[- ]+)?\d{2}$"/><br>
+    </div>
+    <div>
+        <label for='email'>Адрес электронной почты:</label><br>
+                <input type='email' id='email' name='email' placeholder="Адрес вашей электронной почты" class="email" pattern="/^[\w]{1}[\w-\.]*@[\w-]+\.[a-z]{2,4}$/i" /><br>
+    </div>
+    
+    <br>
+        <div>
+            
+            <fieldset>
+                <legend>Укажите согласия</legend>
+                    <input type="checkbox" value="Согласен(на) на обработку персональных данных" id="pers_data" required>
+                    Согласен(на) на обработку персональных данных<span class="red_form">*</span><br>
+                    <input type="checkbox" value="Согласен(на) на получение напоминаний o задолженностях" id="debt">
+                    Согласен(на) на получение напоминаний o задолженностях<br>
+                    <input type="checkbox" value="Согласен(на) на получение новостей по электронной почте" id="news">
+                    Согласен(на) на получение новостей по электронной почте<br>
+            </fieldset>
+            <span class="red_form">*</span> - обязательные поля для заполнения 
+        </div>
+        <p>  
+            <div class="tablet">
+                
+                <button class="send_button" type="reset" name="s_button" method="post" onclick="valid()">>Отправить формуляр в библиотеку<</button>
+                
+            </div>
+            </p>
+
+    </form>
+
+</div>
+<div id="output_here">
+    <output>
+
+    </output>
+</div>
+</body>
+</html>
