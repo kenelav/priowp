@@ -1,13 +1,26 @@
 console.log('Первое задание')
 
 function LeapYear(year){
-    if (year % 4 == 0) console.log(year," - високосный, 366 дней в году")
-    else (console.log(year, ' - невисокосный, 365 дней в году'))
+    if (year % 400 == 0) console.log(year," - високосный, 366 дней в году")
+    else {
+        if (year % 100 == 0) console.log(year, ' - невисокосный, 365 дней в году');
+        else {
+            if (year % 4 == 0) console.log(year," - високосный, 366 дней в году")
+            else {
+                console.log(year, ' - невисокосный, 365 дней в году');}
+                }
+    }
+
+
 }
 
 LeapYear(2022)
 LeapYear(1999)
 LeapYear(1996)
+LeapYear(1700)
+LeapYear(1704)
+LeapYear(1600)
+
 
 console.log('Второе задание А')
 function Massive_summ(stack){
@@ -18,7 +31,6 @@ function Massive_summ(stack){
         if (Math.abs(Math.sqrt(parseFloat(stack[i]))-Math.cbrt(parseFloat(stack[i]))) <= 1e-5) {count = count + stack[i];} 
     }
     console.log(count, "полученная сумма")
-
 }
 var smth = [0.25, 0.5, 0.1, 0.75, 0.0007, 32e-18, 1231e-20, 0, 2.3, 3, 4, 5];
 Massive_summ(smth);
@@ -29,7 +41,7 @@ function Massive_delete(stack){
     let size = stack.length;
     let new_stack = [];
     for (let i=0; i < size; i++){
-        let str = stack[i].toString();
+        let str = stack[i].toString(); 
         let isodd = 0;
         for (let j=0; j < str.length; j++)
         {
@@ -38,10 +50,9 @@ function Massive_delete(stack){
         if (isodd % 2 == 1) {new_stack.push(stack[i])}
     }
     console.log(new_stack, "Новый массив")
-
 }
 
-var smth_sec = [0.25, 0.5, 0.1, 0.75, 0.0007, 0, 2.3, 3, 4, 172348,123, 13, 13, 4245, ];
+var smth_sec = [0.25, 0.5, 0.1, 0.75, 0.0007, 0, 2.3, 3, 4, 172348,123, 13, 13, 4245 ];
 Massive_delete(smth_sec)
 
 console.log('Четвертое задание')
