@@ -39,9 +39,12 @@ function correctdate(date) {
 }
 
 
-function valid() {
+
+const form = document.getElementById('for_form');
+form.addEventListener("submit", function(event){
+  event.preventDefault();
     const output = document.getElementById('output_here');
-    const form = document.getElementById('for_form');
+    
     const book_number1 = document.getElementById('book_number1');
     const book_number2 = document.getElementById('book_number2');
     const book_number3 = document.getElementById('book_number3');
@@ -162,8 +165,8 @@ function valid() {
 
 
     output.outerHTML = tooutput;
-    tooutput = [];
-}
+    this.reset();
+})
 
 function isblank(elem){
   if (elem.toString() == ''){
