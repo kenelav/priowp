@@ -1,0 +1,15 @@
+##<VirtualHost *:80>
+    ##ServerAdmin webmaster@YDS.loc
+    ##DocumentRoot "C:/xampp/htdocs/YDS.loc/www"
+    ##ServerName YDS.loc
+	##ServerAlias www.YDS.loc
+    ##ErrorLog "C:/xampp/htdocs/YDS.loc/logs/error.log"
+    ##CustomLog "C:/xampp/htdocs/YDS.loc/logs/access.log" combined
+	##<Directory "C:/xampp/htdocs/YDS.loc/www">
+	##AllowOverride All
+	##Order allow,deny
+	##Allow from all
+	##</Directory>
+##</VirtualHost>
+
+# 127.0.0.1 YDS.loc
