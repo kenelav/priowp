@@ -119,13 +119,13 @@
                             </h4>
                         </div>
                     </div>
-                    <div class="<?php echo $education_display; ?>transpar algn_c rez9 rez_m_7 rez_b_7 ">
+                    <div class="<?php echo $education_display; ?> algn_c rez9 rez_m_7 rez_b_7 transpar">
                         <h4 class="algn_c transpar">Образование:</h4>
 
                         <?php echo $portfolio['education_place'] ? $portfolio['education_place'] : ' Пусто'; ?>
 
                     </div>
-                    <div class="<?php echo $resume_display; ?> rez9 rez_m_7 rez_b_11 ">
+                    <div class="<?php echo $resume_display; ?> transpar rez9 rez_m_7 rez_b_11 ">
                         <div class=" tile5 rez9 centrify">
                             <h4>
                                 <a href="<?php echo $portfolio['resume_url'] ? $portfolio['resume_url'] : '#'; ?>">Резюме</a>

@@ -504,7 +504,7 @@ $user_id = $pdo->lastInsertId();
             <div class="block-2 col5">
                 <!-- Админ -->
 
-                <div id="errorDiv" style="color: red;"></div>
+                <div id="errorDiv" class="transpar" style="color: red;"></div>
 
             </div>
         </div>
